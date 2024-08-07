@@ -1,6 +1,4 @@
 body {
-    display: flex;
-    flex-direction: column;
     margin: 0 auto;
 }
 
@@ -11,14 +9,17 @@ body {
 
 .header {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr min-content 1fr;
     align-items: center;
-    padding: 93px 26px 92px;
+    padding-top: 92px;
+    padding-bottom: 90px;
 }
 
 .header__menu {
     display: flex;
     justify-content: space-between;
+    padding-left: 51px;
+
 }
 
 .header__links-list {
@@ -45,7 +46,6 @@ body {
 
 .header__logo {
     width: 136px;
-    margin-left: 45px;
 }
 
 .header__logo-image {
@@ -59,13 +59,13 @@ address {
 .header__address {
     display: flex;
     flex-direction: column;
+    padding-left: 192px;
     font-style: inherit;
-    margin-left: 41px;
-    margin-top: 6px;
 }
 
 .adress__item {
     display: block;
+    padding-top: 3px;
     font-size: 18px;
     line-height: 25px;
     text-underline-position: under;
@@ -82,14 +82,9 @@ main {
     gap: 183px;
 }
 
-section {
-    margin: 50px 0;
-}
-
 .cover {
     position: relative;
     padding-bottom: 50px;
-    right: 25px;
     background-image: url(../images/cover.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -124,7 +119,7 @@ section {
     display: block;
     text-align: start;
     padding-left: 50px;
-    padding-top: 165px;
+    padding-top: 170px;
 }
 
 .letter-spacing-extended {
@@ -157,7 +152,7 @@ section {
     justify-content: start;
     align-items: center;
     gap: 79px;
-    margin: 134px 42px 0;
+    margin: 134px 43px 0;
 }
 
 .cover__description-text {
@@ -187,7 +182,7 @@ section {
 }
 
 .lots__heading {
-    padding: 0 0 30px 39px;
+    padding: 0 0 30 64px;
     font-weight: bold;
     font-size: 40px;
     line-height: 1;
@@ -197,7 +192,7 @@ section {
 .lots__card-list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    margin-right: 25px;
+    padding-left: 25px;
     list-style: none;
 }
 
@@ -237,7 +232,7 @@ section {
 
 .card__title {
     position: relative;
-    padding-top: 9px;
+    padding-top: 8px;
     z-index: 1;
     color: white;
     font-weight: bold;
@@ -249,7 +244,7 @@ section {
 
 .card__text {
     position: relative;
-    padding-bottom: 6px;
+    padding-bottom: 8px;
     z-index: 1;
     color: white;
     font-size: 20px;
@@ -258,7 +253,7 @@ section {
 
 .lots__look-more-link {
     display: block;
-    margin: 31px 0 0 38px;
+    margin: 29px 0 0 64px;
     font-size: 20px;
     text-decoration-line: underline;
     text-underline-position: under;
@@ -266,14 +261,13 @@ section {
 
 .about {
     display: grid;
-    grid-template-columns: 334px 668px;
+    grid-template-columns: 334px 1fr;
     column-gap: 25px;
-    /* padding-left: 11px; */
+    padding-left: 24px;
 }
 
 .about__column {
     justify-self: center;
-    /* padding-right: 50px; */
 }
 
 .about__logo {
@@ -306,13 +300,13 @@ section {
     font-size: 20px;
     font-weight: 400;
     line-height: 24px;
-    margin-bottom: 20px;
 }
 
 .footer {
     display: flex;
     justify-content: space-between;
-    padding-top: 159px;
+    padding-top: 181px;
+    /* padding-left: 25px; */
 }
 
 .address {
@@ -320,12 +314,13 @@ section {
     flex-direction: column;
     font-style: inherit;
     line-height: 1.36;
-    padding-left: 24px;
+    padding-left: 50px;
 }
 
 .footer__menu-list {
     text-align: center;
     list-style: none;
+    padding-left: 2px;
 }
 
 .footer__menu-link {
@@ -342,7 +337,7 @@ section {
     display: flex;
     gap: 48px;
     list-style: none;
-    padding-right: 75px;
+    padding-right: 50px;
 }
 
 .footer__social-icon {
